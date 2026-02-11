@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "version": "1.5.0",
+    "schema_version": "1.0.0",
+    "as_of": "2026-02-11T17:50:00Z",
+    "data_sources": {
+      "economy": "IMF WEO (Oct 2025)",
+      "society": "UN WPP 2024",
+      "politics": "V-Dem 2024",
+      "risk": "FSI 2024"
+    },
+    "last_changes": "Added Balkan states, developing Asian economies, North/West African powers, and Caribbean/Oceania states (Part 5)."
+  },
+  "regions": {
+    "East Asia & Pacific": [
+      {
+        "master": { "iso3": "MMR", "name": "ミャンマー", "name_en": "Myanmar", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 1.5, "year": 2025, "estimate": true } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 100.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ミャンマーは軍事政権下にあり、深刻な内戦と人道危機により経済活動が停滞しています。",
+          "tags": ["Conflict Zone", "Military Junta", "High Fragility"],
+          "scores": { "economy_score": 25, "stability_score": 10 },
+          "flags": ["civil_war_active", "sanctions_active"]
+        }
+      },
+      {
+        "master": { "iso3": "KHM", "name": "カンボジア", "name_en": "Cambodia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 6.0, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Autocracy" }
+        },
+        "ui_view": {
+          "headline": "カンボジアは縫製業と観光業に支えられ高い成長率を維持していますが、政治的な権威主義傾向が強まっています。",
+          "tags": ["High Growth", "China Ally", "Garment Industry"],
+          "scores": { "economy_score": 60, "stability_score": 45 }
+        }
+      },
+      {
+        "master": { "iso3": "PNG", "name": "パプアニューギニア", "name_en": "Papua New Guinea", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 82.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "パプアニューギニアはオセアニア最大の島嶼国であり、豊富な資源を持ちますが、治安悪化と部族間対立が課題です。",
+          "tags": ["Resource Rich", "Tribal Conflict", "Pacific Power"],
+          "scores": { "economy_score": 50, "stability_score": 35 }
+        }
+      }
+    ],
+    "Europe": [
+      {
+        "master": { "iso3": "ROU", "name": "ルーマニア", "name_en": "Romania", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.2, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" },
+          "risk": { "fsi_total": { "value": 45.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ルーマニアはEU加盟国として急速に経済水準を向上させており、IT産業と製造業が成長を牽引しています。",
+          "tags": ["Emerging Europe", "IT Hub", "NATO Member"],
+          "scores": { "economy_score": 68, "stability_score": 70 }
+        }
+      },
+      {
+        "master": { "iso3": "HUN", "name": "ハンガリー", "name_en": "Hungary", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.8, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Autocracy", "vdem_score": 0.35 }
+        },
+        "ui_view": {
+          "headline": "ハンガリーは中欧の製造拠点でEV電池産業に注力していますが、EUとの政治的摩擦がリスク要因です。",
+          "tags": ["EV Battery Hub", "EU Skeptic", "Illiberal Democracy"],
+          "scores": { "economy_score": 65, "stability_score": 60 }
+        }
+      },
+      {
+        "master": { "iso3": "SRB", "name": "セルビア", "name_en": "Serbia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Autocracy" },
+          "risk": { "fsi_total": { "value": 58.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "セルビアは西バルカンの経済的中心ですが、コソボ問題などの地政学的緊張とEU加盟プロセスの遅れに直面しています。",
+          "tags": ["Balkan Hub", "Geopolitical Pivot", "EU Candidate"],
+          "scores": { "economy_score": 55, "stability_score": 50 }
+        }
+      }
+    ],
+    "South Asia": [
+      {
+        "master": { "iso3": "LKA", "name": "スリランカ", "name_en": "Sri Lanka", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.5, "year": 2025, "note": "Post-crisis recovery" } },
+          "risk": { "fsi_total": { "value": 88.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "スリランカは深刻な経済危機から回復しつつありますが、依然として高い債務水準と脆弱性を抱えています。",
+          "tags": ["Debt Crisis Recovery", "Tourism", "Strategic Island"],
+          "scores": { "economy_score": 40, "stability_score": 45 }
+        }
+      }
+    ],
+    "Middle East & North Africa": [
+      {
+        "master": { "iso3": "MAR", "name": "モロッコ", "name_en": "Morocco", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 68.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "モロッコは欧州へのゲートウェイとして自動車産業や再生可能エネルギー開発を推進し、比較的安定した統治を維持しています。",
+          "tags": ["Green Energy", "Manufacturing Hub", "Stable Autocracy"],
+          "scores": { "economy_score": 65, "stability_score": 65 }
+        }
+      },
+      {
+        "master": { "iso3": "DZA", "name": "アルジェリア", "name_en": "Algeria", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.0, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 75.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "アルジェリアは欧州向けの主要なガス供給国ですが、経済の多角化の遅れと若年層の不満が課題です。",
+          "tags": ["Gas Exporter", "State Dominated", "Youth Unemployment"],
+          "scores": { "economy_score": 55, "stability_score": 50 }
+        }
+      }
+    ],
+    "Sub-Saharan Africa": [
+      {
+        "master": { "iso3": "AGO", "name": "アンゴラ", "name_en": "Angola", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.9, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 85.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "アンゴラはアフリカ有数の産油国ですが、石油価格への依存度が高く、経済改革と貧困削減が急務です。",
+          "tags": ["Oil Dependent", "Economic Reform", "Inequality"],
+          "scores": { "economy_score": 50, "stability_score": 40 }
+        }
+      },
+      {
+        "master": { "iso3": "CIV", "name": "コートジボワール", "name_en": "Cote d'Ivoire", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 6.5, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Autocracy" }
+        },
+        "ui_view": {
+          "headline": "コートジボワールは世界最大のカカオ生産国であり、インフラ投資により西アフリカで最も高い成長率を維持しています。",
+          "tags": ["Cocoa Giant", "High Growth", "West Africa Hub"],
+          "scores": { "economy_score": 62, "stability_score": 48 }
+        }
+      }
+    ],
+    "Latin America & Caribbean": [
+      {
+        "master": { "iso3": "CUB", "name": "キューバ", "name_en": "Cuba", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 1.0, "year": 2025, "estimate": true } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 78.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "キューバは社会主義体制下で長期的な経済停滞と物資不足に苦しんでおり、若年層の流出が続いています。",
+          "tags": ["Sanctions Hit", "Socialist State", "Economic Crisis"],
+          "scores": { "economy_score": 25, "stability_score": 40 }
+        }
+      },
+      {
+        "master": { "iso3": "DOM", "name": "ドミニカ共和国", "name_en": "Dominican Republic", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.8, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "ドミニカ共和国はカリブ海地域で最大の経済規模を持ち、観光とフリーゾーン（輸出加工区）が成長を牽引しています。",
+          "tags": ["Tourism Power", "Caribbean Leader", "Stable Growth"],
+          "scores": { "economy_score": 65, "stability_score": 60 }
+        }
+      },
+      {
+        "master": { "iso3": "GTM", "name": "グアテマラ", "name_en": "Guatemala", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 75.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "グアテマラは中米最大の人口を持ちますが、貧困と治安の問題が根深く、米国への移民送出国となっています。",
+          "tags": ["Migration Source", "Central America Hub", "High Poverty"],
+          "scores": { "economy_score": 45, "stability_score": 40 }
+        }
+      }
+    ]
+  }
+}

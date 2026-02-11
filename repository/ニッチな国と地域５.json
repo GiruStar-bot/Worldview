@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "version": "1.9.0",
+    "schema_version": "1.0.0",
+    "as_of": "2026-02-11T18:45:00Z",
+    "data_sources": {
+      "economy": "IMF WEO (Oct 2025)",
+      "society": "UN WPP 2024",
+      "politics": "V-Dem 2024",
+      "risk": "FSI 2024"
+    },
+    "last_changes": "Added Conflict zones (Syria, Yemen, Afghanistan), Baltic states, and high-performing small states (Part 9)."
+  },
+  "regions": {
+    "Europe": [
+      {
+        "master": { "iso3": "EST", "name": "エストニア", "name_en": "Estonia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.8, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy", "vdem_score": 0.88 },
+          "risk": { "fsi_total": { "value": 18.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "エストニアは世界最先端の電子政府システムを持つデジタル国家であり、高い教育水準とスタートアップ文化を誇ります。",
+          "tags": ["Digital Society", "Tech Hub", "NATO Member", "Baltic Tiger"],
+          "scores": { "economy_score": 85, "stability_score": 90 }
+        }
+      },
+      {
+        "master": { "iso3": "LTU", "name": "リトアニア", "name_en": "Lithuania", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.5, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy" }
+        },
+        "ui_view": {
+          "headline": "リトアニアはバルト三国最大の経済を持ち、フィンテック産業の育成と対ロシア強硬姿勢で存在感を示しています。",
+          "tags": ["Fintech Hub", "NATO Member", "High Income"],
+          "scores": { "economy_score": 80, "stability_score": 85 }
+        }
+      },
+      {
+        "master": { "iso3": "BLR", "name": "ベラルーシ", "name_en": "Belarus", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 1.5, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 82.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ベラルーシは「欧州最後の独裁国家」と呼ばれ、ロシアへの政治的・経済的従属を強めています。",
+          "tags": ["Russian Ally", "Sanctions Heavy", "Authoritarian"],
+          "scores": { "economy_score": 40, "stability_score": 50 },
+          "flags": ["sanctions_active"]
+        }
+      },
+      {
+        "master": { "iso3": "BIH", "name": "ボスニア・ヘルツェゴビナ", "name_en": "Bosnia and Herzegovina", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.0, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 75.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ボスニア・ヘルツェゴビナは複雑な民族構成による政治的分断が続いており、EU加盟を目指すものの改革は停滞気味です。",
+          "tags": ["Ethnic Division", "Post-Conflict", "Balkan"],
+          "scores": { "economy_score": 45, "stability_score": 40 }
+        }
+      },
+      {
+        "master": { "iso3": "MDA", "name": "モルドバ", "name_en": "Moldova", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "モルドバは欧州最貧国の一つですが、EU加盟に向けた親欧米路線を推進し、農業とIT産業の近代化を図っています。",
+          "tags": ["EU Candidate", "Wine Exporter", "Geopolitical Pivot"],
+          "scores": { "economy_score": 45, "stability_score": 50 },
+          "flags": ["frozen_conflict"]
+        }
+      }
+    ],
+    "Middle East & North Africa": [
+      {
+        "master": { "iso3": "YEM", "name": "イエメン", "name_en": "Yemen", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": -2.0, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 110.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "イエメンは長引く内戦により国家が分断され、深刻な飢餓とインフラ崩壊による人道危機が続いています。",
+          "tags": ["Civil War", "Famine Risk", "Failed State"],
+          "scores": { "economy_score": 5, "stability_score": 5 },
+          "flags": ["conflict_zone_active", "humanitarian_crisis"]
+        }
+      },
+      {
+        "master": { "iso3": "SYR", "name": "シリア", "name_en": "Syria", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": -1.0, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 107.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "シリアは10年以上にわたる内戦で国土が荒廃しており、独裁政権下で国際的な孤立と経済制裁が続いています。",
+          "tags": ["Civil War", "Sanctions Heavy", "Refugee Crisis"],
+          "scores": { "economy_score": 10, "stability_score": 10 },
+          "flags": ["conflict_zone_active", "sanctions_active"]
+        }
+      },
+      {
+        "master": { "iso3": "BHR", "name": "バーレーン", "name_en": "Bahrain", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.0, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" }
+        },
+        "ui_view": {
+          "headline": "バーレーンは湾岸諸国で最初に石油を採掘した国ですが、現在は金融業と観光業が中心の経済となっています。",
+          "tags": ["Financial Hub", "Oil Legacy", "Small Island"],
+          "scores": { "economy_score": 75, "stability_score": 60 }
+        }
+      }
+    ],
+    "South Asia & Central Asia": [
+      {
+        "master": { "iso3": "AFG", "name": "アフガニスタン", "name_en": "Afghanistan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 0.0, "year": 2025, "note": "Stagnation under Taliban" } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 106.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "アフガニスタンはタリバン暫定政権下で国際社会から孤立しており、女性の権利制限と極度の貧困が深刻化しています。",
+          "tags": ["Theocracy", "Human Rights Crisis", "Isolation"],
+          "scores": { "economy_score": 10, "stability_score": 15 },
+          "flags": ["gender_apartheid", "sanctions_active"]
+        }
+      },
+      {
+        "master": { "iso3": "TKM", "name": "トルクメニスタン", "name_en": "Turkmenistan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_growth": { "value": 5.8, "year": 2025 },
+            "major_exports": ["Natural Gas"]
+          },
+          "politics": { "regime_type": "Closed Autocracy" }
+        },
+        "ui_view": {
+          "headline": "トルクメニスタンは豊富な天然ガス資源を持つ閉鎖的な独裁国家であり、情報統制が厳しく「中央アジアの北朝鮮」とも呼ばれます。",
+          "tags": ["Gas Giant", "Isolationist", "Authoritarian"],
+          "scores": { "economy_score": 60, "stability_score": 55 }
+        }
+      },
+      {
+        "master": { "iso3": "BTN", "name": "ブータン", "name_en": "Bhutan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.5, "year": 2025 } },
+          "society": { "population": { "value": 800000, "year": 2025 } }
+        },
+        "ui_view": {
+          "headline": "ブータンは国民総幸福量（GNH）を掲げるカーボンネガティブ国家であり、水力発電と高級観光が主要産業です。",
+          "tags": ["GNH", "Carbon Negative", "Himalayan"],
+          "scores": { "economy_score": 50, "stability_score": 85 }
+        }
+      },
+      {
+        "master": { "iso3": "MDV", "name": "モルディブ", "name_en": "Maldives", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 5.2, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 70.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "モルディブは高級リゾート地として有名ですが、海面上昇による存亡の危機と対外債務の増加に直面しています。",
+          "tags": ["Luxury Tourism", "Climate Existential Risk", "Debt Risk"],
+          "scores": { "economy_score": 60, "stability_score": 55 },
+          "flags": ["climate_risk_critical"]
+        }
+      }
+    ],
+    "East Asia & Pacific": [
+      {
+        "master": { "iso3": "BRN", "name": "ブルネイ", "name_en": "Brunei", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.4, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" }
+        },
+        "ui_view": {
+          "headline": "ブルネイは石油と天然ガスに恵まれた絶対君主制国家であり、国民は無税で手厚い福祉を受けています。",
+          "tags": ["Oil Wealth", "Absolute Monarchy", "Welfare State"],
+          "scores": { "economy_score": 80, "stability_score": 85 }
+        }
+      },
+      {
+        "master": { "iso3": "TLS", "name": "東ティモール", "name_en": "Timor-Leste", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.0, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "東ティモールは21世紀最初の独立国であり、石油基金を原資に国づくりを進めていますが、産業の多角化が急務です。",
+          "tags": ["Oil Dependent", "Young Democracy", "Development"],
+          "scores": { "economy_score": 40, "stability_score": 60 }
+        }
+      }
+    ],
+    "Sub-Saharan Africa": [
+      {
+        "master": { "iso3": "BWA", "name": "ボツワナ", "name_en": "Botswana", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_growth": { "value": 4.0, "year": 2025 },
+            "major_exports": ["Diamonds"]
+          },
+          "politics": { "regime_type": "Electoral Democracy" },
+          "risk": { "fsi_total": { "value": 48.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ボツワナはダイヤモンド資源を適切に管理し、アフリカで最も安定した民主主義と経済成長を実現したモデル国家です。",
+          "tags": ["Diamond Wealth", "Stable Democracy", "Upper Middle Income"],
+          "scores": { "economy_score": 70, "stability_score": 85 }
+        }
+      },
+      {
+        "master": { "iso3": "NAM", "name": "ナミビア", "name_en": "Namibia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "ナミビアは広大な砂漠と豊富な鉱物資源（ウラン・ダイヤモンド）を持ち、近年はグリーン水素のハブとして注目されています。",
+          "tags": ["Green Hydrogen", "Resource Rich", "Stable"],
+          "scores": { "economy_score": 60, "stability_score": 75 }
+        }
+      },
+      {
+        "master": { "iso3": "MUS", "name": "モーリシャス", "name_en": "Mauritius", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.8, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy" },
+          "risk": { "fsi_total": { "value": 40.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "モーリシャスはアフリカ屈指の金融センターであり、多様な文化と強力な民主制度を持つ高所得国です。",
+          "tags": ["Financial Hub", "High Income (Africa)", "Tourism"],
+          "scores": { "economy_score": 75, "stability_score": 88 }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "version": "1.4.0",
+    "schema_version": "1.0.0",
+    "as_of": "2026-02-11T17:40:00Z",
+    "data_sources": {
+      "economy": "IMF WEO (Oct 2025)",
+      "society": "UN WPP 2024",
+      "politics": "V-Dem 2024",
+      "risk": "FSI 2024"
+    },
+    "last_changes": "Added Nordic welfare states, Global financial hubs, Central Asian powers, and Frontier markets (Part 4)."
+  },
+  "regions": {
+    "East Asia & Pacific": [
+      {
+        "master": { "iso3": "SGP", "name": "シンガポール", "name_en": "Singapore", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_nominal": { "value": 525000000000, "year": 2025 },
+            "major_exports": ["Electronics", "Refined Petroleum", "Financial Services"]
+          },
+          "politics": { "regime_type": "Electoral Autocracy" },
+          "risk": { "fsi_total": { "value": 24.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "シンガポールは世界有数の金融・物流ハブであり、効率的な統治システムと極めて高い一人当たり所得を誇ります。",
+          "tags": ["Global Hub", "High Income", "City State", "Stable"],
+          "scores": { "economy_score": 98, "stability_score": 95 }
+        }
+      },
+      {
+        "master": { "iso3": "NZL", "name": "ニュージーランド", "name_en": "New Zealand", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.1, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy", "vdem_score": 0.88 },
+          "risk": { "fsi_total": { "value": 15.6, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ニュージーランドは農業輸出に強みを持つ安定した民主主義国であり、高い生活の質と環境意識が特徴です。",
+          "tags": ["Agri-Export", "Green Economy", "Stable Democracy"],
+          "scores": { "economy_score": 80, "stability_score": 97 }
+        }
+      }
+    ],
+    "Europe": [
+      {
+        "master": { "iso3": "SWE", "name": "スウェーデン", "name_en": "Sweden", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.3, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy", "vdem_score": 0.91 },
+          "risk": { "fsi_total": { "value": 19.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "スウェーデンは革新的な産業と高福祉を両立する民主主義国であり、NATO加盟により安全保障体制を強化しました。",
+          "tags": ["Innovation Leader", "Welfare State", "NATO Member"],
+          "scores": { "economy_score": 88, "stability_score": 92 }
+        }
+      },
+      {
+        "master": { "iso3": "NOR", "name": "ノルウェー", "name_en": "Norway", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_nominal": { "value": 560000000000, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 14.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ノルウェーは豊富な石油・ガス資源を背景に世界最大の政府系ファンドを持つ、極めて豊かな福祉国家です。",
+          "tags": ["Energy Rich", "Sovereign Wealth", "High Income"],
+          "scores": { "economy_score": 96, "stability_score": 99 }
+        }
+      }
+    ],
+    "Central Asia": [
+      {
+        "master": { "iso3": "KAZ", "name": "カザフスタン", "name_en": "Kazakhstan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_growth": { "value": 4.5, "year": 2025 },
+            "major_exports": ["Oil", "Uranium", "Wheat"]
+          },
+          "politics": { "regime_type": "Electoral Autocracy" },
+          "risk": { "fsi_total": { "value": 55.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "カザフスタンは中央アジア最大の経済大国であり、エネルギー資源とウランの主要供給国としての地位を確立しています。",
+          "tags": ["Resource Rich", "Strategic Location", "Uranium Supplier"],
+          "scores": { "economy_score": 65, "stability_score": 58 }
+        }
+      },
+      {
+        "master": { "iso3": "UZB", "name": "ウズベキスタン", "name_en": "Uzbekistan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 5.5, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" }
+        },
+        "ui_view": {
+          "headline": "ウズベキスタンは経済開放政策を進める人口最大の地域国家であり、中央アジアの成長エンジンとして注目されています。",
+          "tags": ["Emerging Market", "Opening Economy", "High Growth"],
+          "scores": { "economy_score": 55, "stability_score": 50 }
+        }
+      }
+    ],
+    "Sub-Saharan Africa": [
+      {
+        "master": { "iso3": "GHA", "name": "ガーナ", "name_en": "Ghana", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.8, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" },
+          "risk": { "fsi_total": { "value": 62.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ガーナは西アフリカにおける民主主義の優等生と見なされていますが、近年は債務再編とインフレへの対応に追われています。",
+          "tags": ["Gold & Cocoa", "Debt Crisis", "Stable Democracy"],
+          "scores": { "economy_score": 48, "stability_score": 65 },
+          "flags": ["economic_reform"]
+        }
+      },
+      {
+        "master": { "iso3": "TZA", "name": "タンザニア", "name_en": "Tanzania", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 6.0, "year": 2025 } },
+          "society": { "population_growth": { "value": 2.9, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "タンザニアは急速な人口増加とインフラ開発により、東アフリカで最も高い成長率を維持している国の一つです。",
+          "tags": ["High Growth", "Tourism", "Emerging Market"],
+          "scores": { "economy_score": 58, "stability_score": 55 }
+        }
+      }
+    ],
+    "Latin America & Caribbean": [
+      {
+        "master": { "iso3": "PER", "name": "ペルー", "name_en": "Peru", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.7, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 72.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ペルーは世界的な銅の産出国として堅実なマクロ経済を持っていますが、政治的な不安定さが継続的なリスク要因です。",
+          "tags": ["Mining Hub", "Political Instability", "Pacific Alliance"],
+          "scores": { "economy_score": 62, "stability_score": 40 },
+          "flags": ["political_unrest"]
+        }
+      },
+      {
+        "master": { "iso3": "VEN", "name": "ベネズエラ", "name_en": "Venezuela", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_growth": { "value": 3.0, "year": 2025, "estimate": true },
+            "inflation": { "value": 150.0, "year": 2024 }
+          },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 105.8, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ベネズエラは世界最大の石油埋蔵量を持ちますが、長期的な経済崩壊と政治的孤立により深刻な人道危機が続いています。",
+          "tags": ["Oil Rich", "Hyperinflation", "Humanitarian Crisis"],
+          "scores": { "economy_score": 20, "stability_score": 15 },
+          "flags": ["sanctions_active", "data_unreliable"]
+        }
+      }
+    ]
+  }
+}

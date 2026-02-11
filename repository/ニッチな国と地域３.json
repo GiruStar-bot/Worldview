@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "version": "1.7.0",
+    "schema_version": "1.0.0",
+    "as_of": "2026-02-11T18:15:00Z",
+    "data_sources": {
+      "economy": "IMF WEO (Oct 2025)",
+      "society": "UN WPP 2024",
+      "politics": "V-Dem 2024",
+      "risk": "FSI 2024"
+    },
+    "last_changes": "Bulk addition of Sahel, Southern Africa, Central America, and Caucasus regions (Part 7)."
+  },
+  "regions": {
+    "Sub-Saharan Africa": [
+      {
+        "master": { "iso3": "SDN", "name": "スーダン", "name_en": "Sudan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": -4.0, "year": 2025, "estimate": true } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 109.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "スーダンは激しい内戦により国家機能が麻痺しており、世界最大級の人道危機に直面しています。",
+          "tags": ["Civil War", "Humanitarian Crisis", "Failed State"],
+          "scores": { "economy_score": 10, "stability_score": 5 },
+          "flags": ["conflict_zone_active", "famine_risk"]
+        }
+      },
+      {
+        "master": { "iso3": "MLI", "name": "マリ", "name_en": "Mali", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 102.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "マリはサヘル地域の治安悪化とクーデターによる政情不安が続いており、金鉱山への依存度が高い経済です。",
+          "tags": ["Sahel Instability", "Gold Exporter", "Military Junta"],
+          "scores": { "economy_score": 35, "stability_score": 15 },
+          "flags": ["security_warning"]
+        }
+      },
+      {
+        "master": { "iso3": "BFA", "name": "ブルキナファソ", "name_en": "Burkina Faso", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.0, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 99.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ブルキナファソはテロリズムの脅威と政治的混乱の中にあり、世界で最も脆弱な国家の一つです。",
+          "tags": ["Security Crisis", "Sahel", "High Fragility"],
+          "scores": { "economy_score": 30, "stability_score": 10 }
+        }
+      },
+      {
+        "master": { "iso3": "ZMB", "name": "ザンビア", "name_en": "Zambia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.2, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "ザンビアはアフリカ第2位の銅生産国ですが、多額の対外債務と気候変動による電力不足が課題です。",
+          "tags": ["Copper Belt", "Debt Restructuring", "Landlocked"],
+          "scores": { "economy_score": 55, "stability_score": 60 }
+        }
+      },
+      {
+        "master": { "iso3": "ZWE", "name": "ジンバブエ", "name_en": "Zimbabwe", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_growth": { "value": 3.0, "year": 2025 },
+            "inflation": { "value": 85.0, "year": 2024 }
+          },
+          "politics": { "regime_type": "Electoral Autocracy" },
+          "risk": { "fsi_total": { "value": 98.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ジンバブエは豊富な鉱物資源を持ちますが、慢性的なハイパーインフレと通貨危機に苦しんでいます。",
+          "tags": ["Hyperinflation", "Resource Rich", "Currency Crisis"],
+          "scores": { "economy_score": 25, "stability_score": 30 }
+        }
+      },
+      {
+        "master": { "iso3": "UGA", "name": "ウガンダ", "name_en": "Uganda", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 6.0, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Autocracy" }
+        },
+        "ui_view": {
+          "headline": "ウガンダは石油開発による経済ブームが期待されていますが、長期政権による統制と人権問題が懸念されています。",
+          "tags": ["Emerging Oil", "Authoritarian", "High Growth"],
+          "scores": { "economy_score": 58, "stability_score": 45 }
+        }
+      },
+      {
+        "master": { "iso3": "CMR", "name": "カメルーン", "name_en": "Cameroon", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.0, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 95.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "カメルーンは中部アフリカの経済ハブですが、英語圏地域の分離独立紛争が長引いています。",
+          "tags": ["Central Africa Hub", "Internal Conflict", "Oil Producer"],
+          "scores": { "economy_score": 52, "stability_score": 35 }
+        }
+      }
+    ],
+    "Latin America & Caribbean": [
+      {
+        "master": { "iso3": "CRI", "name": "コスタリカ", "name_en": "Costa Rica", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy" },
+          "risk": { "fsi_total": { "value": 40.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "コスタリカは軍隊を持たない平和国家であり、環境保護とエコツーリズムの世界的リーダーです。",
+          "tags": ["Green Economy", "Stable Democracy", "No Army"],
+          "scores": { "economy_score": 68, "stability_score": 85 }
+        }
+      },
+      {
+        "master": { "iso3": "PAN", "name": "パナマ", "name_en": "Panama", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_growth": { "value": 4.5, "year": 2025 },
+            "major_exports": ["Services (Canal)", "Banking"]
+          },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "パナマは運河と金融センターを擁する中米で最も豊かな国であり、物流の世界的要衝です。",
+          "tags": ["Logistics Hub", "Dollarized", "High Income"],
+          "scores": { "economy_score": 75, "stability_score": 70 }
+        }
+      },
+      {
+        "master": { "iso3": "SLV", "name": "エルサルバドル", "name_en": "El Salvador", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.5, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Autocracy" }
+        },
+        "ui_view": {
+          "headline": "エルサルバドルは強力な治安対策により犯罪率が急減しましたが、民主的制度の浸食が指摘されています。",
+          "tags": ["Security Focus", "Crypto Adopter", "Authoritarian Drift"],
+          "scores": { "economy_score": 45, "stability_score": 55 }
+        }
+      },
+      {
+        "master": { "iso3": "HND", "name": "ホンジュラス", "name_en": "Honduras", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.2, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 79.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ホンジュラスは農業（コーヒー・バナナ）に依存する経済ですが、貧困とギャング暴力が深刻な課題です。",
+          "tags": ["Agriculture", "Migration Source", "High Crime"],
+          "scores": { "economy_score": 35, "stability_score": 30 }
+        }
+      },
+      {
+        "master": { "iso3": "JAM", "name": "ジャマイカ", "name_en": "Jamaica", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.0, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "ジャマイカは観光業とボーキサイト輸出が柱ですが、高い公的債務と犯罪率への対応を続けています。",
+          "tags": ["Tourism", "Debt Reduction", "Caribbean Hub"],
+          "scores": { "economy_score": 50, "stability_score": 60 }
+        }
+      }
+    ],
+    "Europe & Central Asia": [
+      {
+        "master": { "iso3": "AZE", "name": "アゼルバイジャン", "name_en": "Azerbaijan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.0, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 70.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "アゼルバイジャンは豊富な石油・ガス資源を持つ権威主義国家であり、地域紛争に勝利し影響力を拡大しています。",
+          "tags": ["Energy Exporter", "Caucasus Power", "Authoritarian"],
+          "scores": { "economy_score": 65, "stability_score": 60 }
+        }
+      },
+      {
+        "master": { "iso3": "ARM", "name": "アルメニア", "name_en": "Armenia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 5.5, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" },
+          "risk": { "fsi_total": { "value": 68.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "アルメニアは地政学的な困難の中にありながら、IT産業の育成と民主化改革を進め高成長を維持しています。",
+          "tags": ["Tech Growth", "Geopolitical Risk", "Landlocked"],
+          "scores": { "economy_score": 60, "stability_score": 55 },
+          "flags": ["conflict_risk_high"]
+        }
+      },
+      {
+        "master": { "iso3": "GEO", "name": "ジョージア", "name_en": "Georgia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 5.0, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Autocracy" }
+        },
+        "ui_view": {
+          "headline": "ジョージアは欧州とアジアの交易路ですが、国内の政治的分断とロシアとの緊張関係がリスク要因です。",
+          "tags": ["Transit Hub", "Political Polarization", "EU Candidate"],
+          "scores": { "economy_score": 58, "stability_score": 50 }
+        }
+      },
+      {
+        "master": { "iso3": "KGZ", "name": "キルギス", "name_en": "Kyrgyzstan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.0, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 74.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "キルギスは山岳国であり金鉱山と中国との貿易に依存していますが、政治的な不安定さが繰り返されています。",
+          "tags": ["Gold Mining", "Political Instability", "Mountainous"],
+          "scores": { "economy_score": 40, "stability_score": 40 }
+        }
+      },
+      {
+        "master": { "iso3": "TJK", "name": "タジキスタン", "name_en": "Tajikistan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 6.5, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 78.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "タジキスタンは中央アジア最貧国の一つですが、豊富な水資源とアルミニウム生産、ロシアからの送金に依存しています。",
+          "tags": ["Remittance Dependent", "Water Power", "Authoritarian"],
+          "scores": { "economy_score": 35, "stability_score": 45 }
+        }
+      }
+    ],
+    "Middle East & North Africa": [
+      {
+        "master": { "iso3": "LBN", "name": "レバノン", "name_en": "Lebanon", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 0.5, "year": 2025, "note": "Post-crisis stagnation" } },
+          "risk": { "fsi_total": { "value": 94.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "レバノンはかつて金融ハブでしたが、壊滅的な経済破綻と政治麻痺により極度の貧困化が進んでいます。",
+          "tags": ["Economic Collapse", "Hyperinflation", "Political Paralysis"],
+          "scores": { "economy_score": 15, "stability_score": 20 },
+          "flags": ["defaulted", "currency_collapse"]
+        }
+      },
+      {
+        "master": { "iso3": "KWT", "name": "クウェート", "name_en": "Kuwait", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.8, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" }
+        },
+        "ui_view": {
+          "headline": "クウェートは世界有数の石油埋蔵量を誇る富裕国ですが、議会と政府の対立により経済改革が遅れています。",
+          "tags": ["Oil Wealth", "Political Gridlock", "High Income"],
+          "scores": { "economy_score": 85, "stability_score": 75 }
+        }
+      },
+      {
+        "master": { "iso3": "OMN", "name": "オマーン", "name_en": "Oman", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.5, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" }
+        },
+        "ui_view": {
+          "headline": "オマーンは中東の調停役として知られる安定した君主国であり、観光と物流への産業多角化を進めています。",
+          "tags": ["Diplomatic Mediator", "Diversification", "Stable"],
+          "scores": { "economy_score": 70, "stability_score": 80 }
+        }
+      }
+    ]
+  }
+}

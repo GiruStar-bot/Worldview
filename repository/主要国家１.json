@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "version": "1.1.0",
+    "schema_version": "1.0.0",
+    "as_of": "2026-02-11T17:15:00Z",
+    "data_sources": {
+      "economy": "IMF World Economic Outlook (Oct 2025), World Bank GEP",
+      "society": "UN World Population Prospects 2024",
+      "politics": "V-Dem Democracy Report 2024",
+      "risk": "Fragile States Index (FSI) 2024, WGI 2024"
+    },
+    "last_changes": "Initial integration of 60+ major countries across all regions with 2025 GDP estimates."
+  },
+  "regions": {
+    "East Asia & Pacific": [
+      {
+        "master": { "iso3": "JPN", "name": "日本", "name_en": "Japan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_nominal": { "value": 4279800000000, "year": 2025, "estimate": true, "unit": "USD" },
+            "gdp_growth": { "value": 0.6, "year": 2025, "estimate": true },
+            "major_exports": ["Automobiles", "Semiconductors", "Machinery"]
+          },
+          "society": {
+            "population": { "value": 123200000, "year": 2025 },
+            "age_65_plus": { "value": 29.8, "year": 2024 },
+            "urbanization_rate": { "value": 91.8, "year": 2023 }
+          },
+          "politics": { "regime_type": "Liberal Democracy", "vdem_score": 0.85 },
+          "risk": { "fsi_total": { "value": 15.1, "year": 2024, "scale": "0-120_high_is_risk" } }
+        },
+        "ui_view": {
+          "headline": "日本は成熟した民主主義国であり、極めて高い高齢化率を抱える先進経済国です。",
+          "tags": ["Super-Aging", "Advanced Economy", "Stable Democracy", "Tech Leader"],
+          "scores": { "economy_score": 85, "stability_score": 98 },
+          "flags": []
+        }
+      },
+      {
+        "master": { "iso3": "CHN", "name": "中国", "name_en": "China", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_nominal": { "value": 19398000000000, "year": 2025, "estimate": true },
+            "gdp_growth": { "value": 4.2, "year": 2025, "estimate": true }
+          },
+          "society": {
+            "population": { "value": 1400000000, "year": 2025 },
+            "age_65_plus": { "value": 15.4, "year": 2024 }
+          },
+          "politics": { "regime_type": "Closed Autocracy", "vdem_score": 0.08 },
+          "risk": { "fsi_total": { "value": 63.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "中国は、強権的な体制下で巨大な経済規模を維持していますが、成長の鈍化と急速な高齢化に直面しています。",
+          "tags": ["Economic Superpower", "Rapid Aging", "Authoritarian", "Manufacturing Hub"],
+          "scores": { "economy_score": 92, "stability_score": 55 },
+          "flags": ["demographic_risk"]
+        }
+      },
+      {
+        "master": { "iso3": "AUS", "name": "オーストラリア", "name_en": "Australia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.2, "year": 2025, "estimate": true } },
+          "politics": { "regime_type": "Liberal Democracy" },
+          "risk": { "fsi_total": { "value": 18.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "オーストラリアは資源豊富な自由民主主義国であり、高い生活水準と安定した社会基盤を有しています。",
+          "tags": ["Resource Rich", "Advanced Economy", "Stable Democracy"],
+          "scores": { "economy_score": 88, "stability_score": 95 }
+        }
+      }
+    ],
+    "North America": [
+      {
+        "master": { "iso3": "USA", "name": "アメリカ合衆国", "name_en": "United States", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_nominal": { "value": 30615000000000, "year": 2025, "estimate": true },
+            "gdp_growth": { "value": 2.1, "year": 2025, "estimate": true }
+          },
+          "politics": { "regime_type": "Liberal Democracy", "vdem_score": 0.81 },
+          "risk": { "fsi_total": { "value": 44.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "アメリカは世界最大の経済規模を誇る自由民主主義国であり、高い技術革新力と消費市場が特徴です。",
+          "tags": ["Economic Superpower", "Tech Innovation", "Stable Democracy", "Energy Exporter"],
+          "scores": { "economy_score": 98, "stability_score": 88 },
+          "flags": []
+        }
+      }
+    ],
+    "Europe": [
+      {
+        "master": { "iso3": "DEU", "name": "ドイツ", "name_en": "Germany", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_nominal": { "value": 5013000000000, "year": 2025, "estimate": true } },
+          "society": { "age_65_plus": { "value": 22.8, "year": 2024 } },
+          "politics": { "regime_type": "Liberal Democracy" },
+          "risk": { "fsi_total": { "value": 16.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ドイツは欧州最大の経済を誇る自由民主主義国ですが、高齢化と産業構造の転換期にあります。",
+          "tags": ["EU Leader", "Manufacturing Hub", "Aging Society", "Stable Democracy"],
+          "scores": { "economy_score": 88, "stability_score": 96 }
+        }
+      },
+      {
+        "master": { "iso3": "GBR", "name": "イギリス", "name_en": "United Kingdom", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 1.3, "year": 2025 } }, "politics": { "regime_type": "Liberal Democracy" } },
+        "ui_view": {
+          "headline": "イギリスは高度にサービス化した経済を持つ自由民主主義国であり、金融サービスが強みです。",
+          "tags": ["Financial Hub", "Advanced Economy", "Stable Democracy"],
+          "scores": { "economy_score": 84, "stability_score": 92 }
+        }
+      },
+      {
+        "master": { "iso3": "RUS", "name": "ロシア", "name_en": "Russian Federation", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 1.1, "year": 2025, "estimate": true } },
+          "politics": { "regime_type": "Electoral Autocracy" },
+          "risk": { "fsi_total": { "value": 78.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ロシアは資源大国ですが、権威主義的体制と地政学的紛争により高いリスクを抱えています。",
+          "tags": ["Energy Exporter", "Conflict Zone", "Authoritarian"],
+          "scores": { "economy_score": 60, "stability_score": 40 },
+          "flags": ["conflict_zone_active", "sanctions_impact"]
+        }
+      }
+    ],
+    "South Asia": [
+      {
+        "master": { "iso3": "IND", "name": "インド", "name_en": "India", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_nominal": { "value": 4125000000000, "year": 2025, "estimate": true },
+            "gdp_growth": { "value": 6.5, "year": 2025, "estimate": true }
+          },
+          "society": { "age_65_plus": { "value": 7.1, "year": 2024 } },
+          "politics": { "regime_type": "Electoral Autocracy", "vdem_score": 0.42 },
+          "risk": { "fsi_total": { "value": 73.2, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "インドは世界最速クラスで成長する巨大経済国であり、若年人口が豊富な選挙主導の権威主義国です。",
+          "tags": ["High Growth", "Youthful Population", "Emerging Market", "Tech Hub"],
+          "scores": { "economy_score": 82, "stability_score": 65 },
+          "flags": ["regime_transition_alert"]
+        }
+      }
+    ],
+    "Middle East & North Africa": [
+      {
+        "master": { "iso3": "SAU", "name": "サウジアラビア", "name_en": "Saudi Arabia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.1, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 67.8, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "サウジアラビアは強力な王制下にあるエネルギー大国であり、現在経済の多角化を推進しています。",
+          "tags": ["Energy Exporter", "Vision 2030", "Authoritarian"],
+          "scores": { "economy_score": 80, "stability_score": 68 }
+        }
+      }
+    ],
+    "Sub-Saharan Africa": [
+      {
+        "master": { "iso3": "NGA", "name": "ナイジェリア", "name_en": "Nigeria", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.2, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" },
+          "risk": { "fsi_total": { "value": 98.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ナイジェリアは急速な人口成長を遂げるアフリカ最大の経済国ですが、高い脆弱性リスクを抱えています。",
+          "tags": ["Youthful population", "Energy Exporter", "High Fragility"],
+          "scores": { "economy_score": 45, "stability_score": 30 },
+          "flags": ["data_stale"]
+        }
+      }
+    ],
+    "Latin America & Caribbean": [
+      {
+        "master": { "iso3": "BRA", "name": "ブラジル", "name_en": "Brazil", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.2, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" },
+          "risk": { "fsi_total": { "value": 68.2, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ブラジルは資源豊富な大国であり、民主主義が定着していますが、経済成長と不平等の課題を抱えています。",
+          "tags": ["Resource Rich", "Emerging Market", "Democracy"],
+          "scores": { "economy_score": 72, "stability_score": 62 }
+        }
+      }
+    ]
+  }
+}

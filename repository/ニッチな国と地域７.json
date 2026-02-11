@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "version": "1.11.0",
+    "schema_version": "1.0.0",
+    "as_of": "2026-02-11T19:30:00Z",
+    "data_sources": {
+      "economy": "IMF WEO (Oct 2025)",
+      "society": "UN WPP 2024",
+      "politics": "V-Dem 2024",
+      "risk": "FSI 2024"
+    },
+    "last_changes": "COMPLETE GLOBAL COVERAGE. Added remaining Balkans, African small states, Pacific microstates, Caribbean nations, and special territories (Part 11)."
+  },
+  "regions": {
+    "Europe": [
+      {
+        "master": { "iso3": "ALB", "name": "アルバニア", "name_en": "Albania", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.3, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "アルバニアは観光業の急成長とEU加盟プロセスにより経済近代化を進めています。",
+          "tags": ["Tourism Growth", "EU Candidate", "Balkan"],
+          "scores": { "economy_score": 60, "stability_score": 65 }
+        }
+      },
+      {
+        "master": { "iso3": "MKD", "name": "北マケドニア", "name_en": "North Macedonia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.8, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 62.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "北マケドニアは多民族国家としての調和を保ちつつ、西バルカンの物流・エネルギーハブを目指しています。",
+          "tags": ["NATO Member", "Landlocked", "Multi-ethnic"],
+          "scores": { "economy_score": 55, "stability_score": 60 }
+        }
+      },
+      {
+        "master": { "iso3": "MNE", "name": "モンテネグロ", "name_en": "Montenegro", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "モンテネグロはアドリア海の観光資源を活用し、EU加盟の最有力候補として改革を進めています。",
+          "tags": ["Tourism", "EU Frontrunner", "Small State"],
+          "scores": { "economy_score": 62, "stability_score": 65 }
+        }
+      },
+      {
+        "master": { "iso3": "XKX", "name": "コソボ", "name_en": "Kosovo", "sovereignty": "Disputed" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.8, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 70.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "コソボは欧州で最も若い人口を持つ国の一つですが、セルビアとの関係正常化が経済発展の鍵となっています。",
+          "tags": ["Young Population", "Status Dispute", "Remittance"],
+          "scores": { "economy_score": 50, "stability_score": 55 },
+          "flags": ["frozen_conflict"]
+        }
+      },
+      {
+        "master": { "iso3": "AND", "name": "アンドラ", "name_en": "Andorra", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 1.5, "year": 2025 } } },
+        "ui_view": {
+          "headline": "アンドラはピレネー山脈の観光と免税ショッピングで繁栄する、平均寿命世界トップクラスの小国です。",
+          "tags": ["Tourism", "High Life Expectancy", "Microstate"],
+          "scores": { "economy_score": 85, "stability_score": 95 }
+        }
+      },
+      {
+        "master": { "iso3": "LIE", "name": "リヒテンシュタイン", "name_en": "Liechtenstein", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_nominal_per_capita": { "value": 175000, "year": 2025 } } },
+        "ui_view": {
+          "headline": "リヒテンシュタインは高度に工業化された金融国家であり、世界最高水準の所得を誇ります。",
+          "tags": ["Financial Hub", "Industrialized", "Wealthiest"],
+          "scores": { "economy_score": 98, "stability_score": 98 }
+        }
+      },
+      {
+        "master": { "iso3": "MCO", "name": "モナコ", "name_en": "Monaco", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_nominal_per_capita": { "value": 230000, "year": 2025 } } },
+        "ui_view": {
+          "headline": "モナコは世界中の富裕層が集まる超高級リゾート都市国家であり、不動産価格は世界一です。",
+          "tags": ["Luxury Hub", "City State", "Tax Haven"],
+          "scores": { "economy_score": 95, "stability_score": 90 }
+        }
+      },
+      {
+        "master": { "iso3": "SMR", "name": "サンマリノ", "name_en": "San Marino", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 1.2, "year": 2025 } } },
+        "ui_view": {
+          "headline": "サンマリノは現存する世界最古の共和国であり、観光と切手発行収入で知られる内陸の小国です。",
+          "tags": ["Oldest Republic", "Enclave", "Tourism"],
+          "scores": { "economy_score": 75, "stability_score": 90 }
+        }
+      }
+    ],
+    "Sub-Saharan Africa": [
+      {
+        "master": { "iso3": "SSD", "name": "南スーダン", "name_en": "South Sudan", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": -2.5, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 108.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "南スーダンは世界で最も新しい独立国ですが、内戦と石油依存により極めて脆弱な状態が続いています。",
+          "tags": ["Oil Dependent", "High Fragility", "Famine Risk"],
+          "scores": { "economy_score": 20, "stability_score": 10 },
+          "flags": ["conflict_zone_active"]
+        }
+      },
+      {
+        "master": { "iso3": "MOZ", "name": "モザンビーク", "name_en": "Mozambique", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 5.0, "year": 2025, "note": "LNG projects" } },
+          "risk": { "fsi_total": { "value": 94.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "モザンビークは巨大な天然ガス埋蔵量を持ちますが、北部の武装勢力による治安悪化が開発を阻害しています。",
+          "tags": ["LNG Potential", "Insurgency", "Disaster Risk"],
+          "scores": { "economy_score": 45, "stability_score": 35 },
+          "flags": ["security_warning"]
+        }
+      },
+      {
+        "master": { "iso3": "CAF", "name": "中央アフリカ共和国", "name_en": "Central African Republic", "sovereignty": "UN_Member" },
+        "canonical": {
+          "risk": { "fsi_total": { "value": 106.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "中央アフリカは豊富な鉱物資源を持ちながら、慢性的な紛争により世界最貧国の一つとなっています。",
+          "tags": ["Resource Curse", "Conflict Zone", "Poverty"],
+          "scores": { "economy_score": 15, "stability_score": 15 }
+        }
+      },
+      {
+        "master": { "iso3": "SYC", "name": "セーシェル", "name_en": "Seychelles", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.8, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy" }
+        },
+        "ui_view": {
+          "headline": "セーシェルはアフリカで最も高い人間開発指数（HDI）を持つ高所得国であり、ブルーエコノミーを推進しています。",
+          "tags": ["Blue Economy", "High Income (Africa)", "Tourism"],
+          "scores": { "economy_score": 75, "stability_score": 85 }
+        }
+      },
+      {
+        "master": { "iso3": "GNQ", "name": "赤道ギニア", "name_en": "Equatorial Guinea", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": -1.0, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" }
+        },
+        "ui_view": {
+          "headline": "赤道ギニアは石油資源により一人当たりGDPは高いものの、富の偏在が極端で人権状況に課題があります。",
+          "tags": ["Oil Wealth", "Inequality", "Authoritarian"],
+          "scores": { "economy_score": 50, "stability_score": 30 }
+        }
+      },
+      {
+        "master": { "iso3": "LBR", "name": "リベリア", "name_en": "Liberia", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 4.8, "year": 2025 } } },
+        "ui_view": {
+          "headline": "リベリアはアフリカ最古の共和国であり、内戦からの復興を経て資源開発と農業に注力しています。",
+          "tags": ["Post-Conflict", "Iron Ore", "Historic Republic"],
+          "scores": { "economy_score": 40, "stability_score": 50 }
+        }
+      },
+      {
+        "master": { "iso3": "SLE", "name": "シエラレオネ", "name_en": "Sierra Leone", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } } },
+        "ui_view": {
+          "headline": "シエラレオネはダイヤモンドなどの鉱物資源が豊富ですが、インフレと若年失業率が課題です。",
+          "tags": ["Mining", "Youth Unemployment", "Recovery"],
+          "scores": { "economy_score": 35, "stability_score": 45 }
+        }
+      },
+      {
+        "master": { "iso3": "BEN", "name": "ベナン", "name_en": "Benin", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 6.0, "year": 2025 } } },
+        "ui_view": {
+          "headline": "ベナンは港湾機能を活かした物流と農業（綿花）により、西アフリカで高い成長率を維持しています。",
+          "tags": ["Cotton", "Logistics Hub", "Stable Growth"],
+          "scores": { "economy_score": 60, "stability_score": 60 }
+        }
+      },
+      {
+        "master": { "iso3": "TGO", "name": "トーゴ", "name_en": "Togo", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 5.5, "year": 2025 } } },
+        "ui_view": {
+          "headline": "トーゴはロメ港を中心とした地域の物流・金融ハブを目指し、積極的なインフラ投資を行っています。",
+          "tags": ["Port Hub", "Banking", "Development"],
+          "scores": { "economy_score": 55, "stability_score": 55 }
+        }
+      },
+      {
+        "master": { "iso3": "GMB", "name": "ガンビア", "name_en": "Gambia", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 5.0, "year": 2025 } } },
+        "ui_view": {
+          "headline": "ガンビアはアフリカ本土最小の国であり、観光と農業に依存していますが、民主化プロセスが進展しています。",
+          "tags": ["Tourism", "Small State", "Democratization"],
+          "scores": { "economy_score": 45, "stability_score": 55 }
+        }
+      },
+      {
+        "master": { "iso3": "GNB", "name": "ギニアビサウ", "name_en": "Guinea-Bissau", "sovereignty": "UN_Member" },
+        "canonical": { "risk": { "fsi_total": { "value": 92.0, "year": 2024 } } },
+        "ui_view": {
+          "headline": "ギニアビサウはカシューナッツ生産に依存する脆弱な経済であり、政治的な不安定さと麻薬密輸の中継地化が問題です。",
+          "tags": ["Cashew", "Political Instability", "Fragile"],
+          "scores": { "economy_score": 30, "stability_score": 25 }
+        }
+      },
+      {
+        "master": { "iso3": "MWI", "name": "マラウイ", "name_en": "Malawi", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 3.0, "year": 2025 } } },
+        "ui_view": {
+          "headline": "マラウイは農業中心の平和な国ですが、気候変動によるサイクロン被害と外貨不足に苦しんでいます。",
+          "tags": ["Agriculture", "Climate Vulnerable", "Peaceful"],
+          "scores": { "economy_score": 35, "stability_score": 50 }
+        }
+      },
+      {
+        "master": { "iso3": "LSO", "name": "レソト", "name_en": "Lesotho", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 2.2, "year": 2025 } } },
+        "ui_view": {
+          "headline": "レソトは南アフリカに囲まれた山岳王国であり、水資源の輸出と繊維産業が経済の柱です。",
+          "tags": ["Water Export", "Enclave", "Mountainous"],
+          "scores": { "economy_score": 40, "stability_score": 55 }
+        }
+      },
+      {
+        "master": { "iso3": "SWZ", "name": "エスワティニ", "name_en": "Eswatini", "sovereignty": "UN_Member" },
+        "canonical": { "politics": { "regime_type": "Closed Autocracy" } },
+        "ui_view": {
+          "headline": "エスワティニはアフリカ最後の絶対君主制国家であり、高いHIV感染率と格差が社会課題です。",
+          "tags": ["Absolute Monarchy", "Inequality", "Health Challenges"],
+          "scores": { "economy_score": 40, "stability_score": 40 }
+        }
+      },
+      {
+        "master": { "iso3": "MRT", "name": "モーリタニア", "name_en": "Mauritania", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 4.5, "year": 2025 } } },
+        "ui_view": {
+          "headline": "モーリタニアは広大な砂漠と豊富な鉄鉱石を持ち、近年はガス開発とグリーン水素への投資が進んでいます。",
+          "tags": ["Iron & Gas", "Desert", "Green Hydrogen Potential"],
+          "scores": { "economy_score": 50, "stability_score": 45 }
+        }
+      },
+      {
+        "master": { "iso3": "BDI", "name": "ブルンジ", "name_en": "Burundi", "sovereignty": "UN_Member" },
+        "canonical": { "risk": { "fsi_total": { "value": 96.0, "year": 2024 } } },
+        "ui_view": {
+          "headline": "ブルンジは人口過密な内陸国であり、過去の紛争の影響と貧困により経済発展が遅れています。",
+          "tags": ["Poverty", "Landlocked", "High Density"],
+          "scores": { "economy_score": 25, "stability_score": 30 }
+        }
+      },
+      {
+        "master": { "iso3": "COM", "name": "コモロ", "name_en": "Comoros", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 3.0, "year": 2025 } } },
+        "ui_view": {
+          "headline": "コモロは香料（イランイラン）の輸出で知られる島国ですが、政治的混乱と移民問題が続いています。",
+          "tags": ["Spice Islands", "Political Instability", "Small Island"],
+          "scores": { "economy_score": 35, "stability_score": 35 }
+        }
+      },
+      {
+        "master": { "iso3": "STP", "name": "サントメ・プリンシペ", "name_en": "Sao Tome and Principe", "sovereignty": "UN_Member" },
+        "canonical": { "economy": { "gdp_growth": { "value": 2.5, "year": 2025 } } },
+        "ui_view": {
+          "headline": "サントメ・プリンシペはカカオ生産を中心とする小さな島国であり、観光開発による成長を模索しています。",
+          "tags": ["Cocoa", "Tourism", "Microstate"],
+          "scores": { "economy_score": 40, "stability_score": 60 }
+        }
+      }
+    ],
+    "East Asia & Pacific": [
+      {
+        "master": { "iso3": "KIR", "name": "キリバス", "name_en": "Kiribati", "sovereignty": "UN_Member" },
+        "canonical": { "risk": { "fsi_total": { "value": 75.0, "year": 2024 } } },
+        "ui_view": {
+          "headline": "キリバスは広大な排他的経済水域を持つ海洋国家ですが、気候変動による水没の危機に最も瀕しています。",
+          "tags": ["Climate Existential Risk", "Ocean State", "Fisheries"],
+          "scores": { "economy_score": 40, "stability_score": 50 },
+          "flags": ["climate_risk_critical"]
+        }
+      },
+      {
+        "master": { "iso3": "MHL", "name": "マーシャル諸島", "name_en": "Marshall Islands", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "マーシャル諸島は米国との自由連合関係にあり、船舶登録制度（便宜置籍船）で世界有数の規模を持ちます。",
+          "tags": ["US Compact", "Shipping Hub", "Nuclear Legacy"],
+          "scores": { "economy_score": 50, "stability_score": 60 }
+        }
+      },
+      {
+        "master": { "iso3": "FSM", "name": "ミクロネシア連邦", "name_en": "Micronesia", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "ミクロネシア連邦は多数の島々からなる連邦国家であり、漁業権収入と海外援助に経済を依存しています。",
+          "tags": ["US Compact", "Fisheries", "Archipelago"],
+          "scores": { "economy_score": 45, "stability_score": 60 }
+        }
+      },
+      {
+        "master": { "iso3": "NRU", "name": "ナウル", "name_en": "Nauru", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "ナウルは世界最小の共和国であり、リン鉱石枯渇後は難民収容センターの運営などで収入を得ています。",
+          "tags": ["Smallest Republic", "Resource Depleted", "Dependency"],
+          "scores": { "economy_score": 35, "stability_score": 50 }
+        }
+      },
+      {
+        "master": { "iso3": "PLW", "name": "パラオ", "name_en": "Palau", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "パラオは世界遺産のロックアイランドを持つ観光立国であり、環境保護に極めて厳格な政策をとっています。",
+          "tags": ["Eco-Tourism", "US Compact", "Conservation"],
+          "scores": { "economy_score": 60, "stability_score": 70 }
+        }
+      },
+      {
+        "master": { "iso3": "TON", "name": "トンガ", "name_en": "Tonga", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "トンガはポリネシア唯一の王国であり、海底火山噴火からの復興と海外送金への依存が課題です。",
+          "tags": ["Kingdom", "Remittance", "Disaster Recovery"],
+          "scores": { "economy_score": 45, "stability_score": 60 }
+        }
+      },
+      {
+        "master": { "iso3": "TUV", "name": "ツバル", "name_en": "Tuvalu", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "ツバルは世界で最も海抜が低い国の一つであり、デジタル国家への移行（メタバース化）を模索しています。",
+          "tags": ["Climate Risk Critical", "Digital Nation", "Microstate"],
+          "scores": { "economy_score": 30, "stability_score": 55 }
+        }
+      }
+    ],
+    "Latin America & Caribbean": [
+      {
+        "master": { "iso3": "BLZ", "name": "ベリーズ", "name_en": "Belize", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "ベリーズは中米で唯一英語を公用語とし、ブルーホールなどの観光資源と農業が経済を支えています。",
+          "tags": ["Eco-Tourism", "Barrier Reef", "Caribbean/Central"],
+          "scores": { "economy_score": 50, "stability_score": 60 }
+        }
+      },
+      {
+        "master": { "iso3": "SUR", "name": "スリナム", "name_en": "Suriname", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "スリナムは南米最小の国ですが、新たな海底油田の開発により経済変革の可能性を秘めています。",
+          "tags": ["Emerging Oil", "Diverse Culture", "Rainforest"],
+          "scores": { "economy_score": 55, "stability_score": 50 }
+        }
+      },
+      {
+        "master": { "iso3": "ATG", "name": "アンティグア・バーブーダ", "name_en": "Antigua and Barbuda", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "アンティグア・バーブーダは365のビーチを持つ観光国家であり、市民権投資プログラム（CBI）が収入源です。",
+          "tags": ["Tourism", "CBI Program", "Small Island"],
+          "scores": { "economy_score": 60, "stability_score": 70 }
+        }
+      },
+      {
+        "master": { "iso3": "DMA", "name": "ドミニカ国", "name_en": "Dominica", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "ドミニカ国は「カリブの自然の島」と呼ばれ、地熱発電の開発と環境に配慮した観光を推進しています。",
+          "tags": ["Nature Isle", "Geothermal", "Climate Resilience"],
+          "scores": { "economy_score": 50, "stability_score": 65 }
+        }
+      },
+      {
+        "master": { "iso3": "GRD", "name": "グレナダ", "name_en": "Grenada", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "グレナダは「スパイスの島」として知られ、ナツメグ生産と観光、大学教育（医学部）が産業の柱です。",
+          "tags": ["Spice Isle", "Education Hub", "Tourism"],
+          "scores": { "economy_score": 55, "stability_score": 65 }
+        }
+      },
+      {
+        "master": { "iso3": "KNA", "name": "セントクリストファー・ネイビス", "name_en": "Saint Kitts and Nevis", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "セントクリストファー・ネイビスは西半球最小の国家であり、観光と市民権販売で比較的高い所得を維持しています。",
+          "tags": ["High Income (Caribbean)", "CBI Program", "Microstate"],
+          "scores": { "economy_score": 65, "stability_score": 75 }
+        }
+      },
+      {
+        "master": { "iso3": "LCA", "name": "セントルシア", "name_en": "Saint Lucia", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "セントルシアは高級リゾート地として有名であり、観光業がGDPの大部分を占めています。",
+          "tags": ["Luxury Tourism", "Volcanic Island", "Stable"],
+          "scores": { "economy_score": 60, "stability_score": 70 }
+        }
+      },
+      {
+        "master": { "iso3": "VCT", "name": "セントビンセント・グレナディーン", "name_en": "Saint Vincent and the Grenadines", "sovereignty": "UN_Member" },
+        "ui_view": {
+          "headline": "セントビンセント・グレナディーンはヨット愛好家の聖地ですが、火山噴火やハリケーンのリスクと共存しています。",
+          "tags": ["Sailing Hub", "Disaster Risk", "Archipelago"],
+          "scores": { "economy_score": 50, "stability_score": 65 }
+        }
+      }
+    ],
+    "Middle East & North Africa": [
+      {
+        "master": { "iso3": "PSE", "name": "パレスチナ", "name_en": "Palestine", "sovereignty": "Observer_State" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": -5.0, "year": 2025, "estimate": true } },
+          "risk": { "fsi_total": { "value": 105.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "パレスチナは政治的分断と軍事占領下にあり、ガザ地区の紛争により経済と社会インフラが壊滅的な打撃を受けています。",
+          "tags": ["Occupied Territory", "Conflict Zone", "Humanitarian Crisis"],
+          "scores": { "economy_score": 10, "stability_score": 5 },
+          "flags": ["conflict_zone_active", "data_limited"]
+        }
+      }
+    ]
+  }
+}

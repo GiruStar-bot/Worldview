@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "version": "1.10.0",
+    "schema_version": "1.0.0",
+    "as_of": "2026-02-11T19:00:00Z",
+    "data_sources": {
+      "economy": "IMF WEO (Oct 2025)",
+      "society": "UN WPP 2024",
+      "politics": "V-Dem 2024",
+      "risk": "FSI 2024"
+    },
+    "last_changes": "Final batch: Small Island Developing States (Pacific/Caribbean), European microstates, and strategic small nations (Part 10)."
+  },
+  "regions": {
+    "Europe": [
+      {
+        "master": { "iso3": "ISL", "name": "アイスランド", "name_en": "Iceland", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.4, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy" },
+          "risk": { "fsi_total": { "value": 15.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "アイスランドは再生可能エネルギー率100%を誇る平和な民主主義国であり、観光と漁業が経済の柱です。",
+          "tags": ["Green Energy", "Peaceful", "High Income"],
+          "scores": { "economy_score": 85, "stability_score": 98 }
+        }
+      },
+      {
+        "master": { "iso3": "LUX", "name": "ルクセンブルク", "name_en": "Luxembourg", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_nominal_per_capita": { "value": 135000, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy" }
+        },
+        "ui_view": {
+          "headline": "ルクセンブルクは世界最高水準の一人当たりGDPを持つ金融センターであり、EUの重要な機関が集積しています。",
+          "tags": ["Financial Hub", "Wealthiest", "EU Core"],
+          "scores": { "economy_score": 99, "stability_score": 95 }
+        }
+      },
+      {
+        "master": { "iso3": "CYP", "name": "キプロス", "name_en": "Cyprus", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.8, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "キプロスは地中海の金融・観光拠点ですが、島内の分断（北キプロス問題）が未解決のままです。",
+          "tags": ["Mediterranean Hub", "Divided Island", "EU Member"],
+          "scores": { "economy_score": 70, "stability_score": 65 },
+          "flags": ["frozen_conflict"]
+        }
+      },
+      {
+        "master": { "iso3": "MLT", "name": "マルタ", "name_en": "Malta", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "マルタは地中海の戦略的要衝に位置する島国であり、オンラインゲーム産業や金融サービスが盛んです。",
+          "tags": ["Gaming Hub", "EU Member", "Small Island"],
+          "scores": { "economy_score": 75, "stability_score": 80 }
+        }
+      }
+    ],
+    "East Asia & Pacific": [
+      {
+        "master": { "iso3": "SLB", "name": "ソロモン諸島", "name_en": "Solomon Islands", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.5, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" },
+          "risk": { "fsi_total": { "value": 78.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ソロモン諸島は米中の地政学的競争の最前線に位置しており、インフラ開発と安全保障協定が焦点となっています。",
+          "tags": ["Geopolitical Hotspot", "Pacific Island", "Aid Dependent"],
+          "scores": { "economy_score": 35, "stability_score": 45 },
+          "flags": ["geopolitical_risk"]
+        }
+      },
+      {
+        "master": { "iso3": "VUT", "name": "バヌアツ", "name_en": "Vanuatu", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.0, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 72.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "バヌアツは世界で最も自然災害リスクが高い国の一つであり、気候変動対策を国際社会に強く訴えています。",
+          "tags": ["Climate Vulnerable", "Disaster Risk", "Tourism"],
+          "scores": { "economy_score": 40, "stability_score": 50 },
+          "flags": ["climate_risk_critical"]
+        }
+      },
+      {
+        "master": { "iso3": "WSM", "name": "サモア", "name_en": "Samoa", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.2, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "サモアはポリネシアの文化的中心地であり、政治的に安定した農業・観光国家です。",
+          "tags": ["Polynesian Culture", "Stable", "Aid Recipient"],
+          "scores": { "economy_score": 50, "stability_score": 75 }
+        }
+      }
+    ],
+    "Latin America & Caribbean": [
+      {
+        "master": { "iso3": "BHS", "name": "バハマ", "name_en": "Bahamas", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.0, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy" }
+        },
+        "ui_view": {
+          "headline": "バハマはカリブ海随一の富裕国であり、観光業とオフショア金融が経済を牽引しています。",
+          "tags": ["Tourism Power", "High Income", "Tax Haven"],
+          "scores": { "economy_score": 75, "stability_score": 80 }
+        }
+      },
+      {
+        "master": { "iso3": "BRB", "name": "バルバドス", "name_en": "Barbados", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.8, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy" }
+        },
+        "ui_view": {
+          "headline": "バルバドスは共和制移行後も安定した民主主義を維持し、気候変動金融のための「ブリッジタウン・イニシアティブ」を主導しています。",
+          "tags": ["Climate Leader", "Stable Democracy", "Tourism"],
+          "scores": { "economy_score": 65, "stability_score": 85 }
+        }
+      },
+      {
+        "master": { "iso3": "GUY", "name": "ガイアナ", "name_en": "Guyana", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 18.5, "year": 2025, "note": "Oil boom" } },
+          "risk": { "fsi_total": { "value": 68.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ガイアナは大規模な海底油田の発見により、世界で最も高い経済成長率を記録し続けています。",
+          "tags": ["Oil Boom", "Hyper Growth", "Border Dispute"],
+          "scores": { "economy_score": 90, "stability_score": 60 },
+          "flags": ["resource_curse_risk"]
+        }
+      }
+    ],
+    "Sub-Saharan Africa": [
+      {
+        "master": { "iso3": "ERI", "name": "エリトリア", "name_en": "Eritrea", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.5, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy", "vdem_score": 0.06 },
+          "risk": { "fsi_total": { "value": 96.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "エリトリアは「アフリカの北朝鮮」とも呼ばれる強権的な軍事国家であり、若者の無期限徴兵と大量流出が続いています。",
+          "tags": ["Isolationist", "Military State", "Refugee Source"],
+          "scores": { "economy_score": 20, "stability_score": 25 },
+          "flags": ["human_rights_crisis", "data_unreliable"]
+        }
+      },
+      {
+        "master": { "iso3": "DJI", "name": "ジブチ", "name_en": "Djibouti", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 5.0, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" }
+        },
+        "ui_view": {
+          "headline": "ジブチは紅海の入口という地政学的要衝に位置し、米中仏日など各国の軍事基地が集中しています。",
+          "tags": ["Military Base Hub", "Strategic Port", "Geopolitical Pivot"],
+          "scores": { "economy_score": 60, "stability_score": 55 }
+        }
+      },
+      {
+        "master": { "iso3": "CPV", "name": "カーボベルデ", "name_en": "Cabo Verde", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.5, "year": 2025 } },
+          "politics": { "regime_type": "Liberal Democracy" },
+          "risk": { "fsi_total": { "value": 55.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "カーボベルデはアフリカで最も安定した民主主義国の一つであり、観光と再生可能エネルギーに注力しています。",
+          "tags": ["Stable Democracy", "Island State", "Tourism"],
+          "scores": { "economy_score": 55, "stability_score": 80 }
+        }
+      }
+    ]
+  }
+}

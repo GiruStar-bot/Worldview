@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "version": "1.8.0",
+    "schema_version": "1.0.0",
+    "as_of": "2026-02-11T18:30:00Z",
+    "data_sources": {
+      "economy": "IMF WEO (Oct 2025)",
+      "society": "UN WPP 2024",
+      "politics": "V-Dem 2024",
+      "risk": "FSI 2024"
+    },
+    "last_changes": "Added Central/West African resource states, remaining South American nations, and Caribbean states (Part 8)."
+  },
+  "regions": {
+    "Sub-Saharan Africa": [
+      {
+        "master": { "iso3": "NER", "name": "ニジェール", "name_en": "Niger", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_growth": { "value": 9.5, "year": 2025, "note": "Oil pipeline impact" },
+            "major_exports": ["Uranium", "Oil"]
+          },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 95.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ニジェールは軍事政権下にありますが、石油パイプラインの稼働により世界屈指の経済成長率を記録しています。",
+          "tags": ["Uranium Supplier", "Military Junta", "High Growth", "Sahel"],
+          "scores": { "economy_score": 65, "stability_score": 20 },
+          "flags": ["sanctions_active", "security_warning"]
+        }
+      },
+      {
+        "master": { "iso3": "TCD", "name": "チャド", "name_en": "Chad", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.0, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 103.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "チャドはサヘル地域の軍事的要衝ですが、気候変動への脆弱性と政情不安が慢性化しています。",
+          "tags": ["Landlocked", "Climate Vulnerable", "Military Rule"],
+          "scores": { "economy_score": 30, "stability_score": 15 }
+        }
+      },
+      {
+        "master": { "iso3": "GIN", "name": "ギニア", "name_en": "Guinea", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.5, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 98.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ギニアは世界最大のボーキサイト埋蔵量を持ちますが、政治的移行期にあり鉱業以外の産業育成が課題です。",
+          "tags": ["Bauxite Giant", "Transitional Gov", "Resource Rich"],
+          "scores": { "economy_score": 50, "stability_score": 30 }
+        }
+      },
+      {
+        "master": { "iso3": "GAB", "name": "ガボン", "name_en": "Gabon", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_nominal_per_capita": { "value": 9000, "year": 2025 },
+            "major_exports": ["Oil", "Manganese"]
+          },
+          "politics": { "regime_type": "Closed Autocracy" }
+        },
+        "ui_view": {
+          "headline": "ガボンは豊富な石油とマンガン資源によりアフリカ有数の所得水準を持ちますが、富の再分配と脱石油が課題です。",
+          "tags": ["Oil Dependent", "High Income (Africa)", "Forest Conservation"],
+          "scores": { "economy_score": 60, "stability_score": 45 }
+        }
+      },
+      {
+        "master": { "iso3": "COG", "name": "コンゴ共和国", "name_en": "Republic of the Congo", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" }
+        },
+        "ui_view": {
+          "headline": "コンゴ共和国は石油依存経済からの脱却を目指していますが、長期政権による統治と高い公的債務が続いています。",
+          "tags": ["Oil Exporter", "Debt Distress", "Authoritarian"],
+          "scores": { "economy_score": 40, "stability_score": 40 }
+        }
+      },
+      {
+        "master": { "iso3": "MDG", "name": "マダガスカル", "name_en": "Madagascar", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 4.5, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 80.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "マダガスカルは固有の生態系を持つ島国ですが、サイクロン被害と貧困により開発が遅れています。",
+          "tags": ["Biodiversity Hotspot", "Climate Vulnerable", "Vanilla Exporter"],
+          "scores": { "economy_score": 35, "stability_score": 45 }
+        }
+      }
+    ],
+    "Latin America & Caribbean": [
+      {
+        "master": { "iso3": "ECU", "name": "エクアドル", "name_en": "Ecuador", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 1.5, "year": 2025 } },
+          "risk": { "fsi_total": { "value": 74.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "エクアドルは治安の急激な悪化と麻薬密輸ルート化に直面しており、経済活動と市民生活に深刻な影響が出ています。",
+          "tags": ["Security Crisis", "Oil Exporter", "Dollarized"],
+          "scores": { "economy_score": 45, "stability_score": 30 },
+          "flags": ["security_alert_high"]
+        }
+      },
+      {
+        "master": { "iso3": "PRY", "name": "パラグアイ", "name_en": "Paraguay", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_growth": { "value": 3.8, "year": 2025 },
+            "major_exports": ["Soybeans", "Electricity"]
+          },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "パラグアイは水力発電による電力輸出国であり、大豆・牛肉生産を中心とした安定した農業経済を持っています。",
+          "tags": ["Clean Energy Exporter", "Agri-Power", "Stable Growth"],
+          "scores": { "economy_score": 60, "stability_score": 65 }
+        }
+      },
+      {
+        "master": { "iso3": "HTI", "name": "ハイチ", "name_en": "Haiti", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": -1.5, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 108.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ハイチはギャング支配による治安崩壊と政府機能の不全により、西半球で最も深刻な人道危機にあります。",
+          "tags": ["Failed State", "Gang Violence", "Humanitarian Crisis"],
+          "scores": { "economy_score": 5, "stability_score": 5 },
+          "flags": ["state_collapse", "travel_ban"]
+        }
+      },
+      {
+        "master": { "iso3": "TTO", "name": "トリニダード・トバゴ", "name_en": "Trinidad and Tobago", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 2.2, "year": 2025 } },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "トリニダード・トバゴはカリブ海最大の石油・ガス生産国であり、エネルギー価格に左右されつつも高い所得水準を維持しています。",
+          "tags": ["Energy Rich", "High Income (Caribbean)", "Industrialized"],
+          "scores": { "economy_score": 70, "stability_score": 75 }
+        }
+      }
+    ],
+    "East Asia & Pacific": [
+      {
+        "master": { "iso3": "MNG", "name": "モンゴル", "name_en": "Mongolia", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_growth": { "value": 5.5, "year": 2025 },
+            "major_exports": ["Coal", "Copper"]
+          },
+          "politics": { "regime_type": "Electoral Democracy" }
+        },
+        "ui_view": {
+          "headline": "モンゴルは中露に挟まれた内陸民主主義国であり、鉱物資源輸出により高い成長を遂げていますが、経済の多様化が課題です。",
+          "tags": ["Resource Dependent", "Landlocked", "Democratic Oasis"],
+          "scores": { "economy_score": 60, "stability_score": 65 }
+        }
+      },
+      {
+        "master": { "iso3": "LAO", "name": "ラオス", "name_en": "Laos", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": { "gdp_growth": { "value": 3.5, "year": 2025 } },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 85.0, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "ラオスは「東南アジアのバッテリー」を目指し水力発電開発を進めていますが、過剰債務と通貨安に苦しんでいます。",
+          "tags": ["Debt Distress", "Hydropower", "China Dependent"],
+          "scores": { "economy_score": 35, "stability_score": 45 },
+          "flags": ["debt_crisis_risk"]
+        }
+      },
+      {
+        "master": { "iso3": "PRK", "name": "北朝鮮", "name_en": "North Korea", "sovereignty": "UN_Member" },
+        "canonical": {
+          "economy": {
+            "gdp_growth": { "value": 0.5, "year": 2025, "estimate": true },
+            "note": "Data highly uncertain"
+          },
+          "politics": { "regime_type": "Closed Autocracy" },
+          "risk": { "fsi_total": { "value": 90.5, "year": 2024 } }
+        },
+        "ui_view": {
+          "headline": "北朝鮮は極端な孤立主義と核開発を続ける独裁国家であり、慢性的な食糧不足と経済制裁下にあります。",
+          "tags": ["Hermit Kingdom", "Nuclear Threat", "Sanctions Heavy"],
+          "scores": { "economy_score": 10, "stability_score": 30 },
+          "flags": ["data_unreliable", "sanctions_active"]
+        }
+      }
+    ]
+  }
+}
